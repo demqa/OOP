@@ -1,0 +1,31 @@
+# 1. MODEL---VIEW---CONTROLLER
+
+///////MODEL////////
+nothing about view
+
+///////VIEW/////////
+
+/////CONTROLLER/////
+
+# 2. ABSTRACT FABRIQUE. SINGLETON
+
+View:
+
+virtual void draw() = 0; // abstract
+virtual ~View() {};
+draw(Snake)
+
+
+||
+|\
+| ---------------|
+|                |
+TUIView          GUIView
+
+draw();          draw();
+
+
+TUIView == pty which is tty
+
+GUIView == SFML
+

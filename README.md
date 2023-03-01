@@ -26,4 +26,21 @@ Snakes eat rabbits.
 3. controller.cpp
 4. Makefile
 
+#### EVENT LOOP
 
+1. time
+2. keyboard
+
+// INTO VIEW
+
+draw mechanism
+runloop
+
+object subscribtion on key... 
+
+setOnKey(method onkey());
+
+snake::onKey() { /* code */ };
+
+v = getView();
+v.setonkey(snake::onKey);
