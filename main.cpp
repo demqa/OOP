@@ -3,22 +3,23 @@
 #include <algorithm>
 #include <numeric>
 
+#include "model.h"
 #include "view.h"
-
-void some();
 
 int main(int argc, char **argv) {
 
     if (argc > 1)
     {
         View *v = nullptr;
+        Model model;
 
         if (std::string(argv[1]) == "base")
-            v = new TUIView;
+            v = new TUIView(model);
         else
-            v = new GUIView;
+            v = new GUIView(model);
 
         v->draw();
+
         delete v;
     }
 

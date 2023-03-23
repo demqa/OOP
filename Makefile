@@ -6,7 +6,7 @@ OBJS = main.o model.o view.o controller.o
 all: $(PROJ)
 
 $(PROJ):$(OBJS)
-	$(CXX) $(OBJS) -o $(PROJ)
+	$(CXX) $(OBJS) -o $(PROJ) -lsfml-graphics -lsfml-window -lsfml-system
 
 depend:
 	$(CXX) -MM $(OBJS:.o=.cpp) > .depends

@@ -44,3 +44,26 @@ snake::onKey() { /* code */ };
 
 v = getView();
 v.setonkey(snake::onKey);
+
+TUIView : View
+
+list<snake> snakes;
+
+model.update_subscribe(view);
+
+view {
+    list<snake> subs;
+    
+    for (auto snake: subs) {
+        update(snake);
+    }
+}
+
+set_timer(timeout);
+
+timeout -= value;
+
+if (timeout <= 0) 
+    timeout.func();
+    
+
